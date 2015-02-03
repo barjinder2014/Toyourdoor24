@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|Rancho&effect=shadow-multiple|Lato">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/meanmenu.css" media="all" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/geolocation.js"></script>
+<script type="text/javascript" src="js/sweet-alert.js"></script>
+<link rel="stylesheet" href="css/sweet-alert.css" type="text/css" />
+<script src="cordova.js"></script>
+<script>
+function openDeviceBrowser (externalLinkToOpen){ window.open(externalLinkToOpen, '_system', 'location=no');}
+</script>
+</head>
+<body>
+<div class="langchange">
+	<div class="langcont"><a href="spanish.html"><img src="images/spain-flag-top.png" /></a></div>
+	<div class="langcont"><a href="index.html"><img src="images/english-flag-top.png" /></a></div>
+	<div class="langcont changelangtext">canvi d'idioma</div>
+</div>
+<div class="container">
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="faqs.html">FAQ's</a></li>
+			<li><a href="http://toyourdoor24.com/pages/get-involved">Get Involved</a></li>
+		</ul>
+	</nav>
+</header>
+	<div class="header"><a href="index.html"><img src="images/logo.png" /></a></div>
+	<div class="content">
+		<div class="flashimg">
+			<img src="images/My_Movie_5.2_large.gif" />
+		</div>
+		<div class="locinfocontain">
+			<div class="locafieldsarea">
+				<h1>¡Vostè està aquí!</h1>
+				<input type="text" value="" id="location" name="location"> 
+				<input type="button" onclick="getlocval()" value="Trobi botigues properes" id="locfind">
+			</div>
+			<input type="hidden" value="" id="pin"> 
+			<input type="hidden" value="" id="city"> 
+			<input type="hidden" value="" id="country">
+		</div>
+		
+		<div class="bannerinner">
+			<img src="images/front_page_banner.jpg">
+			<div class="bannertext">
+			<div class="textcont one">Tria la seva botiga</div>
+			<div class="textcont two">Afegeix articles</div>
+			<div class="textcont three">Paga en efectiu o amb tarjeta</div>
+			<div class="textcont four">Entrega Gratis en 1HR</div>
+			</div>
+		</div>
+		
+		<div class="quicklinks">
+			<h4>Enllaços ràpides:</h4>
+		<div class="storelinkout">
+			<div class="storelinks">
+				<a class="comingsoon" href="http://toyourdoor24.com/pages/new-store-coming-soon"><img src="images/ravalstore.jpg"></a>
+			</div>
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/pages/08002-local-stores" title="TOYOURDOOR24 08002 Local Supermarkets"><img alt="" src="images/goticostore.jpg"></a>
+			</div>
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/pages/08003-local-stores" title="TOYOURDOOR24 08003 Borne Local Stores"><img alt="" src="images/bornestore.jpg"></a>
+			</div>
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/pages/08003-barceloneta-stores" title="TOYOURDOOR24 08003 Barceloneta Local Stores"><img alt="" src="images/barcelonastore.jpg"></a>
+			</div>
+		</div>
+		</div>
+		
+		<div class="recstores">
+			<h4>Botigues recomanades:</h4>
+			<div class="storelinkout">
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/collections/24h-supermercat-colom" title="TOYOURDOOR24 24h Colom Supermercat"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/Colom19_small.jpg?1626"></a>
+			</div>
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/collections/colom-supermercat" title="TOYOURDOOR24 Colom Supermercat"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/passeig_2_small.jpg?1383"></a>
+			</div>
+			<div class="storelinks">
+				<a title="TOYOURDOOR24 Super Fresc 08002 Barcelona" href="http://toyourdoor24.com/collections/super-fresc"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/supersuperfrwsh_copy_small.png?3572"></a>
+			</div>
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/collections/avinyo-supermercat" title="TOYOURDOOR24 Avinyo Supermercat"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/avinyo-post_small.jpg?1278"></a>
+			</div>
+			
+			<div class="storelinks">
+				<a title="TOYOURDOOR24 Ali Madina Carniceria 08003 Barceloneta" href="http://toyourdoor24.com/collections/supermercado-carniceria-ali"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/polaroid-ali_small.png?3546"></a>
+			</div>
+			
+			<div class="storelinks">
+				<a href="http://toyourdoor24.com/collections/co-aliment-via-laietana" title="TOYOURDOOR24 Co Aliment Via Laietana"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/Untitled-2_small.jpg?1383"></a>
+			</div>
+			
+			<div class="storelinks">
+				<a title="TOYOURDOOR24 NONSTOP24 08002 Barcelona" href="http://toyourdoor24.com/collections/nonstop24"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/nonstop24_copy_small.png?4542"></a>
+			</div>
+			
+			<div class="storelinks">
+				<a title="TOYOURDOOR24 Picasso Supermercat 08003 Barcelona" href="http://toyourdoor24.com/collections/picasso-supermercat/"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/picasso2_2ba20f8e-e52b-44e5-971c-cb00da474d85_small.jpg?3990"></a>
+			</div>
+			
+			<div class="storelinks">
+				<a title="TOYOURDOOR24 Supermercat PORT 08003 Barcelona" href="http://toyourdoor24.com/collections/supermercat-port"><img src="http://cdn.shopify.com/s/files/1/0677/9533/files/port_copy_small.png?3989"></a>
+			</div>
+			
+
+		</div>
+		</div>
+		<div class="deloption"><img src="images/catba.png" alt="" /></div>
+	</div>
+	<div class="footer">&copy; 2015 toyourdoor24.com</div>
+</div>
+<script src="js/jquery.meanmenu.js"></script>
+<script>
+	jQuery(document).ready(function () {
+		jQuery('header nav').meanmenu();
+	
+	jQuery('.comingsoon').click(function(){
+	jQuery(".transparent").fadeIn();
+	jQuery('.comsoonhold').fadeIn(500);
+	return false;
+	});
+	
+	 jQuery('.okclose').click(function(){
+    jQuery(".comsoonhold").fadeOut();
+	jQuery(".transparent").fadeOut();
+  });
+  
+setTimeout(function(){ jQuery(".comsoonhold").close() }, 3000);
+  
+  });
+</script>
+<div class="transparent"></div>
+<div class="comsoonhold">
+	<div class="comingsooncont">
+	<div class="imgcont"><img src="images/coming_soon.jpg" /></div>
+		<div class="okclose">OK</div>
+	</div>
+</div>
+<div id="mapholder"></div>
+<div id="messageBox" 
+  style="position:fixed;top:30%;left:30%;
+  width:200px;height:100px;border-radius:15px;display:none;text-align:center;
+background-color:skyblue;
+">
+
+<div style="position:absolute;margin-top:0px;left:2px;
+height:20px;width:98%;border-radius:5px;overflow:hidden;
+background-color:pink; 
+"><label id="title" style="
+color:blue;">Skin Advisor</label></div>
+<div style="position:absolute;margin:2px;top:25px;height:80px;width:100%;">
+<label id="message" style="
+color:blue;font-family:Helvetica;"></label></div>
+</div>
+<input type="hidden" id="lat" />
+<input type="hidden" id="long" />
+<div id="geoformcont"></div>
+<div class="sociallinks">
+		<a class="icon-social twitter" title="ToYourDoor24 on Twitter" href="#" onclick="openDeviceBrowser ('http://twitter.com/toyourdoor24');">Twitter</a>
+		<a class="icon-social facebook" title="ToYourDoor24 on Facebook" href="#" onclick="openDeviceBrowser ('http://facebook.com/toyourdoor24');">Facebook</a>
+</div>
+</body>
+</html>
