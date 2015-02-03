@@ -1,0 +1,180 @@
+body{
+font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+}
+img {
+    border: 0 none;
+    max-width: 100%;
+}
+.container{
+width: 100%;
+}
+.header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 0;
+  margin: 60px auto 0;
+}
+.header h1{
+color: #ffffff;
+font-size:20px;
+} 
+.content {
+  text-align: center;
+  float:left;
+  width: 100%;
+  margin: 10px 0 0;
+}
+.content .flashimg {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.flashimg img {
+    max-width: 85%;
+}
+.content .locinfocontain {
+  background: none repeat scroll 0 0 #940000;
+  float: left;
+  width: 88%;
+  padding: 4% 6%;
+}
+.content .locinfocontain h1{
+	color: #ffffff;
+	font-size: 25px;
+}
+.content .locinfocontain input{
+	float:left;
+	width: 100%;
+	height: 40px; 
+	border: 1px solid #B99E5B;
+	font-size:11px;
+}
+.content .locinfocontain  #locfind{
+background: #B99E5B;
+color: #ffffff;
+border-radius: 4px;
+margin:  10px 0 0 0;
+webkit-border-radius: 4px;
+moz-border-radius: 4px;
+}
+.footer {
+  background: none repeat scroll 0 0 #940000;
+  color: #fff;
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  margin: 25px 0 0;
+}
+.footer a{
+color: #fff;
+text-decoration: none;
+}
+.loader {
+  background: none repeat scroll 0 0 #343434;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  display:none;
+  text-align:center;
+}
+/* Popup on home page */
+.popholder{display:none; width: 100%; position: fixed; top: 25%; z-index: 99999; }
+.langselect {padding: 8px 0 0; opacity: 0.96; border: 2px solid #B99E5B; z-index: 99999; background: #940000; height: 187px;margin: 0 auto;  text-align: center; width: 290px;  position: relative;}
+.langselect h1{float: left; font-size: 18px; line-height: 35px; margin: 0; color: #ffffff; width: 100%;}
+.langselect .langcont {float: left; width: 100%; margin: 30px 0 0;}
+.langselect .langcont div{float: left; width: 33.3%;}
+.langselect .langcont div a{color: #fff; font-size: 15px;}
+.langcont div span {float: left; margin: 0 0 10px; width: 100%;}
+.langcont div span img {max-width: 75%;}
+.langselect .close {background: url("../images/closeback.png"); border: 2px solid #343434; border-radius: 20px; color: #fff; cursor: pointer; font-family: arial; font-size: 16px; height: 35px; line-height: 34px; position: absolute; right: -15px; text-align: center; top: -17px; width: 35px;}
+.transparent {background: #343434; height: 100%; opacity: 0.8; position: fixed; width: 100%; display: none; z-index: 9999;}
+
+.bannerinner {float: left; width: 100%; margin: 8px 0 0 0;}
+.content .bannertext .textcont {float: left; font-weight: bold; font-size: 12px; padding: 0 3%; text-align: left; width: 19%;}
+.content .quicklinks {float: left; width: 100%;}
+.content .quicklinks h4 {float: left; width: 100%;}
+.content .quicklinks .storelinkout {margin: 0 auto; width: 70%;}
+.content .quicklinks .storelinkout .storelinks {float: left; margin: 6px;}
+
+.content .recstores {float: left; width: 100%;}
+.content .recstores h4 {float: left; width: 100%;}
+.content .recstores .storelinkout {margin: 0 auto; width: 90%;}
+.content .recstores .storelinkout .storelinks {float: left; margin: 6px;}
+.content  .contentinner{text-align: left; padding: 0 15px;}
+.content  .contentinner h1{color: #940000; font-size: 24px;}
+.content .deloption {float: left; padding: 0 2%; width: 96%; margin: 15px 0 0 0;}
+
+/* Coming Soon popup */
+
+.comsoonhold{position: fixed; width: 100%; top: 25%; display: none; z-index: 99999; animation: 0.3s ease 0s normal none 1 running comsoonhold;}
+.comsoonhold .comingsooncont{width: 300px; height: 127px; border: 2px solid #940000; z-index: 99999; margin: 0 auto;  position: relative;}
+.comingsooncont .okclose {
+  background: none repeat scroll 0 0 #fff;
+  border: 3px solid #940000;
+  bottom: 5px;
+  box-shadow: 4px 2px 8px #940000;
+  color: #940000;
+  height: 25px;
+  position: absolute;
+  right: 12px;
+  text-align: center;
+  width: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+#mapholder {
+  display: none;
+}
+.langchange {
+  left: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+.langchange .langcont {
+  float: left;
+  margin: 14px 8px 0 0;
+}
+.langchange .langcont.changelangtext {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 25px;
+}
+button.confirm{background: #6F5F37 !important;}
+.sociallinks {position: fixed; right: 0; top: 60px; width: 40px; z-index: 999;}
+.icon-social {display: block; float: left; height: 32px; margin-bottom: 5px; margin-right: 10px; overflow: hidden; text-indent: -9999px; width: 32px;}
+.icon-social:hover {opacity: 1;}
+.icon-social{background: url('../images/social.png') no-repeat; opacity: 0.8;}
+.icon-social.twitter {background-position: -37px 0;}
+.icon-social.facebook {background-position: -1px 0;}
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+	.content .quicklinks {
+	  width: 39%;
+	  padding: 0 0 0 1%;
+	}
+	.content .quicklinks .storelinkout {
+	width: 100%;
+	float: left;
+	}
+	.content .quicklinks h4 {
+	  float: left;
+	  text-align: center;
+	  width: 100%;
+	}
+	.content .recstores {
+	  width: 58%;
+	}
+	.content .recstores .storelinkout {
+	  float: right;
+	  width: 88%;
+	}
+	.sweet-alert{top: 85% !important}
+}
